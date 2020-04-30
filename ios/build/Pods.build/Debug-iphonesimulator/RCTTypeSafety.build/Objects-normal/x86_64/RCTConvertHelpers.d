@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native/Libraries/TypeSafety/RCTConvertHelpers.mm \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Target\ Support\ Files/RCTTypeSafety/RCTTypeSafety-prefix.pch \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native/Libraries/TypeSafety/RCTConvertHelpers.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyVector.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyIterator.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Folly/folly/Optional.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Folly/folly/Portability.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Folly/folly/portability/Config.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Folly/folly/CPortability.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Folly/folly/Traits.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Folly/folly/Utility.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Folly/folly/lang/Exception.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Folly/folly/CppAttributes.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/React-Core/React/RCTConvert.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/React-Core/React/RCTAnimationType.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/React-Core/React/RCTBorderStyle.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/React-Core/React/RCTInspectorDevServerHelper.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/React-Core/React/RCTPackagerConnection.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/React-Core/React/RCTLog.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/React-Core/React/RCTAssert.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/React-Core/React/RCTUtils.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/React-Core/React/RCTPointerEvents.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/React-Core/React/RCTTextDecorationLineType.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/Yoga/yoga/Yoga.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/Yoga/yoga/YGEnums.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/Yoga/yoga/YGMacros.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/Yoga/yoga/YGValue.h
