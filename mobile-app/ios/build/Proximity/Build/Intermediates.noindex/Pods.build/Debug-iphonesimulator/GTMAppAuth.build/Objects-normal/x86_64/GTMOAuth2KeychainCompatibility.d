@@ -1,0 +1,34 @@
+dependencies: \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/GTMAppAuth/Source/GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.m \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Target\ Support\ Files/GTMAppAuth/GTMAppAuth-prefix.pch \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/GTMAppAuth/Source/GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/GTMAppAuth/Source/GTMAppAuthFetcherAuthorization.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/GTMSessionFetcher/GTMSessionFetcher.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/AppAuthCore.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDAuthState.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDAuthStateChangeDelegate.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDAuthStateErrorDelegate.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDAuthorizationRequest.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDExternalUserAgentRequest.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDResponseTypes.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDScopes.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDAuthorizationResponse.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDAuthorizationService.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDError.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDErrorUtilities.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDExternalUserAgent.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDExternalUserAgentSession.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDGrantTypes.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDIDToken.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDRegistrationRequest.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDRegistrationResponse.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDScopeUtilities.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDServiceConfiguration.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDServiceDiscovery.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDTokenRequest.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDTokenResponse.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDTokenUtilities.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDURLSessionProvider.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDEndSessionRequest.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/AppAuth/OIDEndSessionResponse.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/GTMAppAuth/Source/GTMKeychain.h

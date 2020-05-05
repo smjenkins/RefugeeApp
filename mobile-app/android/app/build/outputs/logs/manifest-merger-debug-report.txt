@@ -1,0 +1,797 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:1:1-42:12
+INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:1:1-42:12
+INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:1:1-42:12
+INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:1:1-42:12
+MERGED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:1:1-42:12
+MERGED from [hermes-debug.aar] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8932db5600f7a50420b57719c8aaa8af/AndroidManifest.xml:2:1-7:12
+MERGED from [:@react-native-community_async-storage] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:@react-native-community_google-signin] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-code-push] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-code-push/android/app/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:react-native-fast-image] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-fast-image/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-gesture-handler] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-28:12
+MERGED from [:react-native-reanimated] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-splash-screen] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-svg] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f47a38f2e6f43cc2c9d5b6e8d7e1b501/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e280c0d547db6edb9d82e3fbc764b185/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/63f0181b2c4ae8c42910cff82dcab92f/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-core:16.0.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/9816dbaa55cd7c3824c44a37673619e6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-analytics:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/177a5db27312e1503a83265fb855b346/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/84260ccb2698f0102ab05a672997de72/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/c00bea2f25528c076f4d9667b27bb052/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/2a051cf628ca5cfc88307da15ee02f1d/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d84995bba5a0b187618ed74efcd59ef8/AndroidManifest.xml:17:1-29:12
+MERGED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:2:1-52:12
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ef8c6d85003d9cd72511bb7de8369f5a/AndroidManifest.xml:2:1-19:12
+MERGED from [com.github.yalantis:ucrop:2.2.2-native] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/64a2e2c075bdfaa15627aeed5191714d/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/dca2416bcd72ced635dd0ea3e2eec60b/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cfbe4e2d532935abc638a5213705f2da/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/a60d8c123519cc2f75e8b0d645a6d2fc/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/60443fe266e5ded7991807cd020b8036/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/1be75f8d36dac21599df361b1f9adc4a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7afae63d6ef2b55da35d08b52f25bbf8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/775925c920dca846d88c783301171a94/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/a86c89aab12edeac414c2ecd749514ed/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/eafbd83e09815da8dc85ccc46a399910/AndroidManifest.xml:2:1-13:12
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7c8a9ba801824646afb07b04a2f2fd26/AndroidManifest.xml:2:1-16:12
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b7d123513761153159a104f2c996eeed/AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/3eda6e6eac3b0bcf37c61419a98cb0a3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/0d44872669ae965595acf2f1f387cbe6/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/3ec0d9536820f7b78ae0eee8c0d20adb/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/58c413f7f3e584b52432d3c28f58a47b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e70b3c966570390275090872bfd764ac/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e4fafeea1e83cc7ded1c63dfc84a5d34/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/fe1f76122bca70dc087349a66c875453/AndroidManifest.xml:17:1-28:12
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/50a70d53522e018f34959bd0f500251c/AndroidManifest.xml:45:1-56:12
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d28d90714639eb1e8b67520a35ab3178/AndroidManifest.xml:2:1-13:12
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7d08585355ac7461ef33a68ec11ecafa/AndroidManifest.xml:22:1-33:12
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/463b420982656feb96cacc97327b62a8/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/bb5c0db30601154fa6b0361331f527da/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f087854c99b996b5727092f25cec33f7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8c19ea0301fc5d0c816eeab89ad78144/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/863486b11857503d1eacbd3e94afc52c/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b05bbcd383aaf991c18bccfd2c973eef/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/498a962357c8a9648286074c2c4f7227/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/1649bbed7dcbc1d3473e6c3c4fa4762a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/6982e93ba7317b25f8275372845e411a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ea26c6183990d0dc0764cc91222eccca/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ddcbbafe2a1fa2b416897a46a17d9d5c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/04e1637de86e8fbfb38b419e2ad8c2fb/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f1cdd9bd4b737214ec6c7c528b5ef41a/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/5fda02d1b18372476347a6b328e55233/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/6b0042ead09565755754fcd517b80655/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/580e2747950d7bffac38713f1cdc323c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/1948d4561f426e8b506d38c4f7810562/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/6aa2da0334d59cdf5308d4c33f074dba/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/65cf6a4172854cc75648e46c2dda8e3c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7d059ca6cf8cb802d27508b188f57fa9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/689adc91cdbbf617b8a3d91a89132a3b/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e0d66435dc66a4f22c2d5b5bf723527a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/0d3e4ce816ffb5ca5bf0f01f239b8819/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/55e3c9cc21f56b0d8ff7bd6422f4c1e0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/bd03ab8c522bb8461a59d5ee348ce405/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/2d2cc1cb821a32ba1a610773258ad194/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e883e72ceddf55f041e0638c40dfa35a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8eb39e18a0bcc3912838505e47d5a543/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f5f52c18cee323ceb4bcbfdcf778eaa4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/a87323d67e69940d74ffef430bf413ab/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/6ca909797a1687f03e7343abaf22b2e6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f90d7d221cecec30523a98566b022fc6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/760b70e61489faf198397c0e8ede4add/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/c1b5a55b7c2a66af671b837f93c8ec16/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cd6d7861588900e6180b9ecc3d5f4ce7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/4f6c6bf9cdfec911d9d94a857733915c/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:2:3-30
+		INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:2:3-30
+		INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:1:1-42:12
+		INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:1:1-42:12
+		INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:react-native-code-push] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-code-push/android/app/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-code-push] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-code-push/android/app/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:27:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:23:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ef8c6d85003d9cd72511bb7de8369f5a/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ef8c6d85003d9cd72511bb7de8369f5a/AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:23:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/50a70d53522e018f34959bd0f500251c/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/50a70d53522e018f34959bd0f500251c/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d28d90714639eb1e8b67520a35ab3178/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d28d90714639eb1e8b67520a35ab3178/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7d08585355ac7461ef33a68ec11ecafa/AndroidManifest.xml:29:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7d08585355ac7461ef33a68ec11ecafa/AndroidManifest.xml:29:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/463b420982656feb96cacc97327b62a8/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/463b420982656feb96cacc97327b62a8/AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:5:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:6:22-63
+application
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:8:5-40:19
+MERGED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:8:5-40:19
+MERGED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:8:5-40:19
+MERGED from [:react-native-code-push] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-code-push/android/app/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-15:19
+MERGED from [:react-native-code-push] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-code-push/android/app/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-15:19
+MERGED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-21:19
+MERGED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-21:19
+MERGED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-26:19
+MERGED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-26:19
+MERGED from [:react-native-splash-screen] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-splash-screen] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f47a38f2e6f43cc2c9d5b6e8d7e1b501/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f47a38f2e6f43cc2c9d5b6e8d7e1b501/AndroidManifest.xml:11:5-20
+MERGED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:29:5-35:19
+MERGED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:29:5-35:19
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e280c0d547db6edb9d82e3fbc764b185/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e280c0d547db6edb9d82e3fbc764b185/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/63f0181b2c4ae8c42910cff82dcab92f/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/63f0181b2c4ae8c42910cff82dcab92f/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-core:16.0.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/9816dbaa55cd7c3824c44a37673619e6/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/9816dbaa55cd7c3824c44a37673619e6/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/177a5db27312e1503a83265fb855b346/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/177a5db27312e1503a83265fb855b346/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/84260ccb2698f0102ab05a672997de72/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/84260ccb2698f0102ab05a672997de72/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d84995bba5a0b187618ed74efcd59ef8/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d84995bba5a0b187618ed74efcd59ef8/AndroidManifest.xml:22:5-27:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ef8c6d85003d9cd72511bb7de8369f5a/AndroidManifest.xml:11:5-17:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ef8c6d85003d9cd72511bb7de8369f5a/AndroidManifest.xml:11:5-17:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/eafbd83e09815da8dc85ccc46a399910/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/eafbd83e09815da8dc85ccc46a399910/AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7c8a9ba801824646afb07b04a2f2fd26/AndroidManifest.xml:10:5-14:19
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7c8a9ba801824646afb07b04a2f2fd26/AndroidManifest.xml:10:5-14:19
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b7d123513761153159a104f2c996eeed/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b7d123513761153159a104f2c996eeed/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/3eda6e6eac3b0bcf37c61419a98cb0a3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/3eda6e6eac3b0bcf37c61419a98cb0a3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/0d44872669ae965595acf2f1f387cbe6/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/0d44872669ae965595acf2f1f387cbe6/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/3ec0d9536820f7b78ae0eee8c0d20adb/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/3ec0d9536820f7b78ae0eee8c0d20adb/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/58c413f7f3e584b52432d3c28f58a47b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/58c413f7f3e584b52432d3c28f58a47b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e70b3c966570390275090872bfd764ac/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e70b3c966570390275090872bfd764ac/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e4fafeea1e83cc7ded1c63dfc84a5d34/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e4fafeea1e83cc7ded1c63dfc84a5d34/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/fe1f76122bca70dc087349a66c875453/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/fe1f76122bca70dc087349a66c875453/AndroidManifest.xml:22:5-26:19
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/50a70d53522e018f34959bd0f500251c/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/50a70d53522e018f34959bd0f500251c/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d28d90714639eb1e8b67520a35ab3178/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d28d90714639eb1e8b67520a35ab3178/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7d08585355ac7461ef33a68ec11ecafa/AndroidManifest.xml:31:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7d08585355ac7461ef33a68ec11ecafa/AndroidManifest.xml:31:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/463b420982656feb96cacc97327b62a8/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/463b420982656feb96cacc97327b62a8/AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8c19ea0301fc5d0c816eeab89ad78144/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8c19ea0301fc5d0c816eeab89ad78144/AndroidManifest.xml:10:5-20
+MERGED from [androidx.core:core:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/689adc91cdbbf617b8a3d91a89132a3b/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/689adc91cdbbf617b8a3d91a89132a3b/AndroidManifest.xml:24:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/0d3e4ce816ffb5ca5bf0f01f239b8819/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/0d3e4ce816ffb5ca5bf0f01f239b8819/AndroidManifest.xml:9:5-20
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/55e3c9cc21f56b0d8ff7bd6422f4c1e0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/55e3c9cc21f56b0d8ff7bd6422f4c1e0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/689adc91cdbbf617b8a3d91a89132a3b/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:10:7-39
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:10:7-39
+	tools:ignore
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml:7:75-114
+	android:roundIcon
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:12:7-52
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:12:7-52
+	tools:targetApi
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml:7:54-74
+	android:icon
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:11:7-41
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:11:7-41
+	android:allowBackup
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:13:7-34
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:13:7-34
+	android:theme
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:14:7-38
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:14:7-38
+	android:usesCleartextTraffic
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml:7:18-53
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:9:7-38
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:9:7-38
+service#io.invertase.firebase.messaging.RNFirebaseMessagingService
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:16:7-20:17
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:16:16-89
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:17:9-19:25
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:18:11-72
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:18:19-69
+service#io.invertase.firebase.messaging.RNFirebaseBackgroundMessagingService
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:22:7-102
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:22:16-99
+meta-data#com.google.firebase.messaging.default_notification_icon
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:24:7-134
+	android:resource
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:24:89-131
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:24:18-88
+meta-data#com.google.firebase.messaging.default_notification_color
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:25:7-132
+	android:resource
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:25:90-129
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:25:18-89
+activity#com.proximity.app.MainActivity
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:27:7-38:18
+	android:screenOrientation
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:31:9-45
+	android:label
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:29:9-41
+	android:launchMode
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:30:9-39
+	android:windowSoftInputMode
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:33:9-51
+	android:configChanges
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:32:9-79
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:28:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:34:9-37:25
+action#android.intent.action.MAIN
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:35:13-65
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:35:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:36:13-73
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:36:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:39:7-84
+MERGED from [:react-native-code-push] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-code-push/android/app/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-86
+MERGED from [:react-native-code-push] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-code-push/android/app/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-86
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml:39:17-81
+uses-sdk
+INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml
+MERGED from [hermes-debug.aar] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8932db5600f7a50420b57719c8aaa8af/AndroidManifest.xml:5:5-44
+MERGED from [hermes-debug.aar] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8932db5600f7a50420b57719c8aaa8af/AndroidManifest.xml:5:5-44
+MERGED from [:@react-native-community_async-storage] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_async-storage] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_google-signin] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-community_google-signin] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-code-push] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-code-push/android/app/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-code-push] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-code-push/android/app/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fast-image] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-fast-image/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fast-image] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-fast-image/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:6:5-8:41
+MERGED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:6:5-8:41
+MERGED from [:react-native-reanimated] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-splash-screen] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-splash-screen] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f47a38f2e6f43cc2c9d5b6e8d7e1b501/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f47a38f2e6f43cc2c9d5b6e8d7e1b501/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e280c0d547db6edb9d82e3fbc764b185/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e280c0d547db6edb9d82e3fbc764b185/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/63f0181b2c4ae8c42910cff82dcab92f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/63f0181b2c4ae8c42910cff82dcab92f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/9816dbaa55cd7c3824c44a37673619e6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/9816dbaa55cd7c3824c44a37673619e6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/177a5db27312e1503a83265fb855b346/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/177a5db27312e1503a83265fb855b346/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/84260ccb2698f0102ab05a672997de72/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/84260ccb2698f0102ab05a672997de72/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/c00bea2f25528c076f4d9667b27bb052/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/c00bea2f25528c076f4d9667b27bb052/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/2a051cf628ca5cfc88307da15ee02f1d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/2a051cf628ca5cfc88307da15ee02f1d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d84995bba5a0b187618ed74efcd59ef8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d84995bba5a0b187618ed74efcd59ef8/AndroidManifest.xml:20:5-44
+MERGED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ef8c6d85003d9cd72511bb7de8369f5a/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ef8c6d85003d9cd72511bb7de8369f5a/AndroidManifest.xml:7:5-43
+MERGED from [com.github.yalantis:ucrop:2.2.2-native] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/64a2e2c075bdfaa15627aeed5191714d/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.2-native] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/64a2e2c075bdfaa15627aeed5191714d/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/dca2416bcd72ced635dd0ea3e2eec60b/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/dca2416bcd72ced635dd0ea3e2eec60b/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cfbe4e2d532935abc638a5213705f2da/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cfbe4e2d532935abc638a5213705f2da/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/a60d8c123519cc2f75e8b0d645a6d2fc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/a60d8c123519cc2f75e8b0d645a6d2fc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/60443fe266e5ded7991807cd020b8036/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/60443fe266e5ded7991807cd020b8036/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/1be75f8d36dac21599df361b1f9adc4a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/1be75f8d36dac21599df361b1f9adc4a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7afae63d6ef2b55da35d08b52f25bbf8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7afae63d6ef2b55da35d08b52f25bbf8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/775925c920dca846d88c783301171a94/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/775925c920dca846d88c783301171a94/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/a86c89aab12edeac414c2ecd749514ed/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/a86c89aab12edeac414c2ecd749514ed/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/eafbd83e09815da8dc85ccc46a399910/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/eafbd83e09815da8dc85ccc46a399910/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7c8a9ba801824646afb07b04a2f2fd26/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7c8a9ba801824646afb07b04a2f2fd26/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b7d123513761153159a104f2c996eeed/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b7d123513761153159a104f2c996eeed/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/3eda6e6eac3b0bcf37c61419a98cb0a3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/3eda6e6eac3b0bcf37c61419a98cb0a3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/0d44872669ae965595acf2f1f387cbe6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/0d44872669ae965595acf2f1f387cbe6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/3ec0d9536820f7b78ae0eee8c0d20adb/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/3ec0d9536820f7b78ae0eee8c0d20adb/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/58c413f7f3e584b52432d3c28f58a47b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/58c413f7f3e584b52432d3c28f58a47b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e70b3c966570390275090872bfd764ac/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e70b3c966570390275090872bfd764ac/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e4fafeea1e83cc7ded1c63dfc84a5d34/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e4fafeea1e83cc7ded1c63dfc84a5d34/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/fe1f76122bca70dc087349a66c875453/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/fe1f76122bca70dc087349a66c875453/AndroidManifest.xml:20:5-44
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/50a70d53522e018f34959bd0f500251c/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/50a70d53522e018f34959bd0f500251c/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d28d90714639eb1e8b67520a35ab3178/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d28d90714639eb1e8b67520a35ab3178/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7d08585355ac7461ef33a68ec11ecafa/AndroidManifest.xml:27:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7d08585355ac7461ef33a68ec11ecafa/AndroidManifest.xml:27:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/463b420982656feb96cacc97327b62a8/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/463b420982656feb96cacc97327b62a8/AndroidManifest.xml:7:5-43
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/bb5c0db30601154fa6b0361331f527da/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/bb5c0db30601154fa6b0361331f527da/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f087854c99b996b5727092f25cec33f7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f087854c99b996b5727092f25cec33f7/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8c19ea0301fc5d0c816eeab89ad78144/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8c19ea0301fc5d0c816eeab89ad78144/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/863486b11857503d1eacbd3e94afc52c/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/863486b11857503d1eacbd3e94afc52c/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b05bbcd383aaf991c18bccfd2c973eef/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b05bbcd383aaf991c18bccfd2c973eef/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/498a962357c8a9648286074c2c4f7227/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/498a962357c8a9648286074c2c4f7227/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/1649bbed7dcbc1d3473e6c3c4fa4762a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/1649bbed7dcbc1d3473e6c3c4fa4762a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/6982e93ba7317b25f8275372845e411a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/6982e93ba7317b25f8275372845e411a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ea26c6183990d0dc0764cc91222eccca/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ea26c6183990d0dc0764cc91222eccca/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ddcbbafe2a1fa2b416897a46a17d9d5c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ddcbbafe2a1fa2b416897a46a17d9d5c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/04e1637de86e8fbfb38b419e2ad8c2fb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/04e1637de86e8fbfb38b419e2ad8c2fb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f1cdd9bd4b737214ec6c7c528b5ef41a/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f1cdd9bd4b737214ec6c7c528b5ef41a/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/5fda02d1b18372476347a6b328e55233/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/5fda02d1b18372476347a6b328e55233/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/6b0042ead09565755754fcd517b80655/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/6b0042ead09565755754fcd517b80655/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/580e2747950d7bffac38713f1cdc323c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/580e2747950d7bffac38713f1cdc323c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/1948d4561f426e8b506d38c4f7810562/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/1948d4561f426e8b506d38c4f7810562/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/6aa2da0334d59cdf5308d4c33f074dba/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/6aa2da0334d59cdf5308d4c33f074dba/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/65cf6a4172854cc75648e46c2dda8e3c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/65cf6a4172854cc75648e46c2dda8e3c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7d059ca6cf8cb802d27508b188f57fa9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7d059ca6cf8cb802d27508b188f57fa9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/689adc91cdbbf617b8a3d91a89132a3b/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/689adc91cdbbf617b8a3d91a89132a3b/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e0d66435dc66a4f22c2d5b5bf723527a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e0d66435dc66a4f22c2d5b5bf723527a/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/0d3e4ce816ffb5ca5bf0f01f239b8819/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/0d3e4ce816ffb5ca5bf0f01f239b8819/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/55e3c9cc21f56b0d8ff7bd6422f4c1e0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/55e3c9cc21f56b0d8ff7bd6422f4c1e0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/bd03ab8c522bb8461a59d5ee348ce405/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/bd03ab8c522bb8461a59d5ee348ce405/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/2d2cc1cb821a32ba1a610773258ad194/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/2d2cc1cb821a32ba1a610773258ad194/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e883e72ceddf55f041e0638c40dfa35a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/e883e72ceddf55f041e0638c40dfa35a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8eb39e18a0bcc3912838505e47d5a543/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8eb39e18a0bcc3912838505e47d5a543/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f5f52c18cee323ceb4bcbfdcf778eaa4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f5f52c18cee323ceb4bcbfdcf778eaa4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/a87323d67e69940d74ffef430bf413ab/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/a87323d67e69940d74ffef430bf413ab/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/6ca909797a1687f03e7343abaf22b2e6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/6ca909797a1687f03e7343abaf22b2e6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f90d7d221cecec30523a98566b022fc6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f90d7d221cecec30523a98566b022fc6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/760b70e61489faf198397c0e8ede4add/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/760b70e61489faf198397c0e8ede4add/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/c1b5a55b7c2a66af671b837f93c8ec16/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/c1b5a55b7c2a66af671b837f93c8ec16/AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cd6d7861588900e6180b9ecc3d5f4ce7/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cd6d7861588900e6180b9ecc3d5f4ce7/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/4f6c6bf9cdfec911d9d94a857733915c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/4f6c6bf9cdfec911d9d94a857733915c/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /Users/orionpress/Downloads/TestApps/Proximity-master/android/app/src/debug/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-76
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:19
+MERGED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:30:9-34:19
+MERGED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:30:9-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-89
+meta-data#com.google.firebase.components:io.invertase.firebase.ReactNativeFirebaseAppRegistrar
+ADDED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [:react-native-firebase] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-116
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-78
+provider#androidx.core.content.FileProvider
+ADDED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-21:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-47
+	android:authorities
+		ADDED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-60
+	android:exported
+		ADDED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-37
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-20:58
+	android:resource
+		ADDED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-55
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-25:72
+	android:theme
+		ADDED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-69
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/orionpress/Downloads/TestApps/Proximity-master/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-60
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:31:13-33:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:33:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/16718e8ecad86318b3e6ffe7aff8f89d/AndroidManifest.xml:32:17-107
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/8f53b8c70d05bd37bac936182b5d5440/AndroidManifest.xml:34:13-89
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/63f0181b2c4ae8c42910cff82dcab92f/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/63f0181b2c4ae8c42910cff82dcab92f/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/63f0181b2c4ae8c42910cff82dcab92f/AndroidManifest.xml:29:13-82
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/cc528ee098eff1ac60ef8e176cab1e75/AndroidManifest.xml:31:17-139
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7bcf045f9ef85c125d7098cb17c85e82/AndroidManifest.xml:42:25-78
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d84995bba5a0b187618ed74efcd59ef8/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d84995bba5a0b187618ed74efcd59ef8/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d84995bba5a0b187618ed74efcd59ef8/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.1.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/d84995bba5a0b187618ed74efcd59ef8/AndroidManifest.xml:24:13-79
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:39:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:45:5-82
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:45:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:46:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:46:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:49:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:49:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:50:5-89
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.21] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/08570658c51ab11002f9360aaefd90b3/AndroidManifest.xml:50:22-86
+provider#com.crashlytics.android.CrashlyticsInitProvider
+ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ef8c6d85003d9cd72511bb7de8369f5a/AndroidManifest.xml:12:9-16:38
+	android:authorities
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ef8c6d85003d9cd72511bb7de8369f5a/AndroidManifest.xml:14:13-75
+	android:exported
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ef8c6d85003d9cd72511bb7de8369f5a/AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ef8c6d85003d9cd72511bb7de8369f5a/AndroidManifest.xml:16:13-35
+	android:name
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/ef8c6d85003d9cd72511bb7de8369f5a/AndroidManifest.xml:13:13-75
+meta-data#com.bumptech.glide.integration.okhttp3.OkHttpGlideModule
+ADDED from [com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7c8a9ba801824646afb07b04a2f2fd26/AndroidManifest.xml:11:9-13:43
+	android:value
+		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7c8a9ba801824646afb07b04a2f2fd26/AndroidManifest.xml:13:13-40
+	android:name
+		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.9.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/7c8a9ba801824646afb07b04a2f2fd26/AndroidManifest.xml:12:13-84
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b7d123513761153159a104f2c996eeed/AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b7d123513761153159a104f2c996eeed/AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b7d123513761153159a104f2c996eeed/AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b7d123513761153159a104f2c996eeed/AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b7d123513761153159a104f2c996eeed/AndroidManifest.xml:13:13-77
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/f86109faaa8a294ae957346403b1673f/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/b6ce0d086047bd83b8cdffb4e79628a3/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/91cf920b727b64bd3eefaee1466bad5a/AndroidManifest.xml:49:13-87
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/fe1f76122bca70dc087349a66c875453/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/fe1f76122bca70dc087349a66c875453/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/orionpress/.gradle/caches/transforms-2/files-2.1/fe1f76122bca70dc087349a66c875453/AndroidManifest.xml:24:13-58
