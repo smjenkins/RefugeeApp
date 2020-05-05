@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/FIRApp.m \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRAnalyticsConfiguration.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRAppInternal.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRErrors.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRErrorCode.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRBundleUtil.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainerInternal.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRComponent.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainer.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentType.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRLibrary.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRConfigurationInternal.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Private/FIROptionsInternal.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h

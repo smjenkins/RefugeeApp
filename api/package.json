@@ -1,0 +1,31 @@
+{
+  "name": "proximity-api",
+  "version": "1.0.0",
+  "description": "GraphQL API for Proximity Mobile App",
+  "main": "src/index.js",
+  "repository": "git@github.com:smjenkins/RefugeeApp.git",
+  "author": "Raaj <raaj.ahab@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "apollo-server-express": "^2.12.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.11",
+    "mongoose-autopopulate": "^0.12.2",
+    "shortid": "^2.2.15"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --detectOpenHandles --watchAll --runInBand"
+  },
+  "devDependencies": {
+    "apollo-server-testing": "^2.12.0",
+    "jest": "^25.5.4",
+    "mongodb-memory-server": "^6.5.2"
+  }
+}

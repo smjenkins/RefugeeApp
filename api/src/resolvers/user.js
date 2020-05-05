@@ -1,0 +1,9 @@
+exports.userResolvers = {
+  Mutation: {
+
+  },
+
+  Query: {
+
+  },
+};

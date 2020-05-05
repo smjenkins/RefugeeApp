@@ -1,0 +1,33 @@
+dependencies: \
+  /Users/raaj/repos/RefugeeApp/mobile-app/node_modules/react-native/React/Base/RCTJavaScriptLoader.mm \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Target\ Support\ Files/React-Core/React-Core-prefix.pch \
+  /Users/raaj/repos/RefugeeApp/mobile-app/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTDefines.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTInspectorDevServerHelper.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTPackagerConnection.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Public/React-cxxreact/cxxreact/JSBundleType.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Folly/folly/Portability.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Folly/folly/portability/Config.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Folly/folly/CPortability.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTBridgeDelegate.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTJavaScriptLoader.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTBridgeModule.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTFrameUpdate.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTInvalidating.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTAnimationType.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTBorderStyle.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTLog.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTAssert.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTUtils.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTPointerEvents.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTTextDecorationLineType.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Public/Yoga/yoga/Yoga.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Public/Yoga/yoga/YGEnums.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Public/Yoga/yoga/YGMacros.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Public/Yoga/yoga/YGValue.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/node_modules/react-native/React/Base/RCTMultipartDataTask.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/React-Core/React/RCTMultipartStreamReader.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/node_modules/react-native/React/Base/RCTUtils.h

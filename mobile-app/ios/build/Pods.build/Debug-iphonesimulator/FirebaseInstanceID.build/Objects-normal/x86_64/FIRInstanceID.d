@@ -1,0 +1,33 @@
+dependencies: \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceID.m \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/Public/FIRInstanceID.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Public/SSZipArchive/SSZipArchive.modulemap \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Private/FirebaseCore/FIRAppInternal.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Private/FirebaseCore/FIRApp.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Private/FirebaseCore/FIRErrors.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Private/FirebaseCore/FIRErrorCode.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Private/FirebaseCore/FIRComponent.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Private/FirebaseCore/FIRComponentContainer.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Private/FirebaseCore/FIRComponentType.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Private/FirebaseCore/FIRLibrary.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Private/FirebaseCore/FIROptions.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Private/GoogleUtilities/GULAppEnvironmentUtil.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/Headers/Private/GoogleUtilities/GULUserDefaults.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/Private/FIRInstanceID+Private.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/Private/FIRInstanceIDCheckinPreferences.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDAuthService.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCheckinService.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDUtilities.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCombinedHandler.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDConstants.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDDefines.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeyPairStore.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeyPairUtilities.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDLogger.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRIMessageCode.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDStore.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenInfo.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDAPNSInfo.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenManager.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDVersionUtilities.h \
+  /Users/orionpress/Downloads/TestApps/Proximity-master/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/NSError+FIRInstanceID.h
