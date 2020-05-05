@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingClient.m \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingClient.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/Public/FIRMessaging.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceID_Private.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceID.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/GoogleUtilities/GULReachabilityChecker.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingConnection.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingConstants.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingDataMessageManager.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingDefines.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingLogger.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMMessageCode.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingRmqManager.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingTopicsCommon.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingUtilities.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/NSError+FIRMessaging.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingPubSubRegistrar.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingTopicOperation.h

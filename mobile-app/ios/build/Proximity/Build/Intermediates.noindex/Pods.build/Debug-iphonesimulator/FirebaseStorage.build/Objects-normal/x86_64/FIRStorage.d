@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/FIRStorage.m \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorage.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageConstants.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageComponent.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageConstants_Private.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStoragePath.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageReference_Private.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageReference.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageDownloadTask.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageObservableTask.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageTask.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageMetadata.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageUploadTask.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageTokenAuthorizer.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/GTMSessionFetcher/GTMSessionFetcherService.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/GTMSessionFetcher/GTMSessionFetcher.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorageUtils.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/FirebaseStorage/Firebase/Storage/Private/FIRStorage_Private.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/FirebaseAuthInterop/FIRAuthInterop.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/FirebaseCore/FIRAppInternal.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/FirebaseCore/FIRApp.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/FirebaseCore/FIRErrors.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/FirebaseCore/FIRErrorCode.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/FirebaseCore/FIRComponentContainer.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/FirebaseCore/FIRComponentType.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/FirebaseCore/FIRLibrary.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/FirebaseCore/FIRComponent.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/FirebaseCore/FIROptions.h \
+  /Users/raaj/repos/RefugeeApp/mobile-app/ios/Pods/Headers/Private/GTMSessionFetcher/GTMSessionFetcherLogging.h
