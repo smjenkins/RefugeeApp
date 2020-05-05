@@ -1,4 +1,0 @@
-#Thu Apr 16 08:46:38 MYT 2020
-base.0=/Users/orionpress/Downloads/TestApps/Proximity-master/android/app/build/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex
