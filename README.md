@@ -13,14 +13,7 @@
   An open source social media that does not use your data against you
   </p>
 </p>
-<p align="center">
-<a href="https://apps.apple.com/us/app/proximity-app/id1489041006">
-    <img width="160px" style="margin: 10px 10px;" src="https://proximity-mobile.firebaseapp.com/images/download/download-app-store.png">
-</a>
-<a href="https://play.google.com/store/apps/details?id=com.proximity.app">
-    <img width="160px" style="margin: 10px 10px;" src="https://proximity-mobile.firebaseapp.com/images/download/download-google-play.png">
-</a>
-</p>
+
 
 <p align="center">
 <img src="https://build.appcenter.ms/v0.1/apps/8277c135-e249-4122-beb3-6bc00b7ec11d/branches/master/badge" />
@@ -39,31 +32,12 @@
 
 ## :star: Inspiration:
 
-Earlier this year I picked up GraphQL and for a few months I was thinking about making a simple chat app or something with GraphQL then kinda forgot about it due to other projects.
-
-Recently I was getting a lot into System Design and scalability stuff so I thought about implementing the classic "Instagram Clone" template but then immediately thought about the chat app I wanted to do so why not combine it and make it functional?
-
-Hence, I decided to design and implement Proximity an open-source social media as a hobby project in my free time
-
-I decided to open source it because newcomers to React Native might find it helpful
-
-PS. UI is Heavily inspired by Instagram as I'm not a designer 🤪, The code is not perfect but I'm still improving it 😄
 
 **Please leave a :star: as motivation if you liked the idea :smile:**
 
 <br />
 
-<p>
-  <img align="left" width="90px"  style="margin: 0px 20px 0px 0px;" src="https://proximity-mobile.web.app/images/proximity-logo-round.png"> 
-  <p  style="margin: 0">  
-    Built and maintained with 🌮 by <a href="https://karanpratapsingh.web.app">Karan</a>
 
-  </p>
-  <p style="margin: 0px 10px;">  
-    <a href="mailto:karan.pratapsingh686@gmail.com">💼 Hire Me</a> | 
-    <a href="https://www.paypal.me/karanpratapsingh">🍺 Donate</a> 
-  </p>
-</p> 
 
 <br />
 
