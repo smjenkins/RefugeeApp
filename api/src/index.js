@@ -1,20 +1,29 @@
-const { ApolloServer } = require('apollo-server-express');
-const dotenv = require('dotenv');
+const express = require('express');
+const cors = require('cors');
+const mongoose = require('mongoose');
 
-const { Repository } = require('./repository');
-const { typeDefs } = require('./schema');
-const { resolvers } = require('./resolvers');
-const { GraphQLServer } = require('./server');
+// Loading env vars....
+require('dotenv').config();
 
-dotenv.config();
+const { GraphqlServer } = require('./server');
 
-(async function () {
-  // Start GraphQL server
-  const server = await GraphQLServer({
-    databaseURI: process.env.DATABASE_URI,
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+(async function() {
+  console.log('Connecting to database');
+  await mongoose.connect(process.env.DATABASE_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
   });
+  console.log('Database connection has been made..');
 
-  server.listen({ port: process.env.PORT || 5000 }, (port) => {
+  const graphqlServer = GraphqlServer();
+  graphqlServer.applyMiddleware({ app, path: '/graphql' });
+  app.listen(process.env.PORT || 5000, () => {
     console.log(`Server started on http://localhost:${process.env.PORT || 5000}`);
     console.log(`GraphQL API served on http://localhost:${process.env.PORT || 5000}/graphql`);
   });
