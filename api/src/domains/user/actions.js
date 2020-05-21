@@ -37,7 +37,7 @@ exports.verifyUser = async function({ phone, code }) {
     if (existingUser) {
       return {
         user: existingUser.toObject(),
-        newUser: false,
+        newUser: existingUser.email || existingUser.firstName || existingUser.lastName,
         token: await generateToken(existingUser.toObject()),
       };
     }
@@ -48,7 +48,7 @@ exports.verifyUser = async function({ phone, code }) {
 
     return {
       user: newUser.toObject(),
-      newUser: true,
+      newUser: existingUser.email || existingUser.firstName || existingUser.lastName,
       token: await generateToken(newUser.toObject()),
     };
   } catch (e) {
@@ -57,8 +57,22 @@ exports.verifyUser = async function({ phone, code }) {
         throw new Error('MaxCheckAttemptsReached');
       case 20404:
         throw new Error('VerificationNotExist');
+      case 20429:
+        throw new Error('TooManyRequests');
       default:
         throw e;
     }
   }
+};
+
+exports.editUserProfile = async function({ userUUID, ...edits }) {
+  const existingUser = await UserModel.findById(userUUID);
+
+  if (!existingUser) throw new Error('UserNotExist');
+
+  return UserModel.findByIdAndUpdate(existingUser._id, edits, { new: true });
+};
+
+exports.getUserProfile = async function({ userUUID }) {
+  return await UserModel.findById(userUUID);
 };
