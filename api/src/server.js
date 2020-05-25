@@ -1,29 +1,46 @@
-const express = require('express');
+require('dotenv').config();
+
 const { ApolloServer, gql } = require('apollo-server-express');
-const { Repository } = require('./repository');
-const { typeDefs } = require('./schema');
-const { resolvers } = require('./resolvers');
+const {
+  EmailAddressResolver,
+  EmailAddressTypeDefinition,
+  PhoneNumberResolver,
+  PhoneNumberTypeDefinition,
+} = require('graphql-scalars');
 
-async function GraphQLServer({ databaseURI }) {
-  const repository = await Repository.start({ databaseURI });
+// Utils
+const { validateToken } = require('./utils');
 
-  // Start GraphQL server
-  const server = new ApolloServer({
-    context: async () => {
-      return {
-        repository,
-      };
+// Typedefs and Resolvers
+const user = require('./domains/user');
+
+const rootTypeDef = gql`
+  scalar EmailAddress
+  scalar PhoneNumber
+  type Query {
+    root: String
+  }
+
+  type Mutation {
+    root: String
+  }
+`;
+
+// Configuring graphQL server
+exports.GraphqlServer = () => {
+  return new ApolloServer({
+    context: async ({ req }) => {
+      let currentUser = null;
+      if (req.headers.token) {
+        currentUser = await validateToken(req.headers.token);
+      }
+
+      return { currentUser };
     },
-    typeDefs,
-    resolvers,
+    typeDefs: [rootTypeDef, user.typeDefs],
+    resolvers: [user.resolvers],
     introspection: true,
+    playground: true,
     tracing: true,
   });
-
-  const app = express();
-  server.applyMiddleware({ app });
-
-  return app;
-}
-
-exports.GraphQLServer = GraphQLServer;
+};
