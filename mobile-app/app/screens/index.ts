@@ -7,17 +7,17 @@ import ProfileViewScreen from './ProfileViewScreen';
 import MessageScreen from './MessageScreen';
 import ConversationScreen from './ConversationScreen';
 import PostViewScreen from './PostViewScreen';
-import LoginScreen from './LoginScreen';
+import IntroScreen from './IntroScreen/index';
 
 export {
-  HomeScreen,
-  ExploreScreen,
-  UploadScreen,
-  NotificationScreen,
-  ProfileScreen,
-  ProfileViewScreen,
-  MessageScreen,
-  ConversationScreen,
-  PostViewScreen,
-  LoginScreen
+	IntroScreen,
+	HomeScreen,
+	ExploreScreen,
+	UploadScreen,
+	NotificationScreen,
+	ProfileScreen,
+	ProfileViewScreen,
+	MessageScreen,
+	ConversationScreen,
+	PostViewScreen,
 };

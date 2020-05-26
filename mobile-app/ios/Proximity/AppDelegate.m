@@ -14,7 +14,6 @@
 #import "RNFirebaseNotifications.h"
 #import "RNFirebaseMessaging.h"
 
-#import "RNSplashScreen.h"
 #import <CodePush/CodePush.h>
 
 @implementation AppDelegate
@@ -36,8 +35,6 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-
-  [RNSplashScreen show];
 
   return YES;
 }

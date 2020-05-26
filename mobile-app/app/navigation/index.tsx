@@ -8,63 +8,75 @@ import { StackRoutes, TabBarRoutes } from './Routes';
 import TabBarComponent from './TabBarComponent';
 import getSlideFromRightTransitionConfig from './Transition';
 
-const TabNavigator = createBottomTabNavigator({
-  HomeScreen: {
-    screen: TabBarRoutes.HomeScreen
-  },
-  ExploreScreen: {
-    screen: TabBarRoutes.ExploreScreen
-  },
-  UploadScreen: {
-    screen: TabBarRoutes.UploadScreen
-  },
-  NotificationScreen: {
-    screen: TabBarRoutes.NotificationScreen
-  },
-  ProfileScreen: {
-    screen: TabBarRoutes.ProfileScreen
-  },
-}, {
-  lazy: true,
-  tabBarOptions: {
-    showLabel: false,
-  },
-  tabBarComponent: props => <TabBarComponent  {...props} />
-});
+const TabNavigator = createBottomTabNavigator(
+	{
+		HomeScreen: {
+			screen: TabBarRoutes.HomeScreen,
+		},
+		ExploreScreen: {
+			screen: TabBarRoutes.ExploreScreen,
+		},
+		UploadScreen: {
+			screen: TabBarRoutes.UploadScreen,
+		},
+		NotificationScreen: {
+			screen: TabBarRoutes.NotificationScreen,
+		},
+		ProfileScreen: {
+			screen: TabBarRoutes.ProfileScreen,
+		},
+	},
+	{
+		lazy: true,
+		tabBarOptions: {
+			showLabel: false,
+		},
+		tabBarComponent: (props) => <TabBarComponent {...props} />,
+	},
+);
 
-const AuthStack = createStackNavigator({
-  LoginScreen: {
-    screen: StackRoutes.LoginScreen
-  }
-}, { headerMode: 'none' });
+const AuthStack = createStackNavigator(
+	{
+		IntroScreen: {
+			screen: StackRoutes.IntroScreen,
+		},
+	},
+	{ headerMode: 'none' },
+);
 
-const AppStack = createStackNavigator({
-  TabNavigator: {
-    screen: TabNavigator
-  },
-  MessageScreen: {
-    screen: StackRoutes.MessageScreen
-  },
-  ConversationScreen: {
-    screen: StackRoutes.ConversationScreen
-  },
-  ProfileViewScreen: {
-    screen: StackRoutes.ProfileViewScreen
-  },
-  PostViewScreen: {
-    screen: StackRoutes.PostViewScreen
-  }
-}, {
-  headerMode: 'none',
-  transitionConfig: Platform.OS === 'ios' ? undefined : getSlideFromRightTransitionConfig
-});
+const AppStack = createStackNavigator(
+	{
+		TabNavigator: {
+			screen: TabNavigator,
+		},
+		MessageScreen: {
+			screen: StackRoutes.MessageScreen,
+		},
+		ConversationScreen: {
+			screen: StackRoutes.ConversationScreen,
+		},
+		ProfileViewScreen: {
+			screen: StackRoutes.ProfileViewScreen,
+		},
+		PostViewScreen: {
+			screen: StackRoutes.PostViewScreen,
+		},
+	},
+	{
+		headerMode: 'none',
+		transitionConfig: Platform.OS === 'ios' ? undefined : getSlideFromRightTransitionConfig,
+	},
+);
 
-const SwitchNavigator = createAnimatedSwitchNavigator({
-  Auth: AuthStack,
-  App: AppStack
-}, {
-  initialRouteName: 'Auth'
-});
+const SwitchNavigator = createAnimatedSwitchNavigator(
+	{
+		Auth: AuthStack,
+		App: AppStack,
+	},
+	{
+		initialRouteName: 'Auth',
+	},
+);
 
 const AppNavigator = createAppContainer(SwitchNavigator as any);
 
