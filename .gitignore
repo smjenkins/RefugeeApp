@@ -1,4 +1,14 @@
-.idea
+#node_modules
 mobile-app/node_modules
 api/node_modules
+
+# native builds
+mobile-app/android/*
+mobile-app/ios/*
+
+# env
 api/.env
+
+# misc
+.idea
+*/.DS_Store
