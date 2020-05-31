@@ -21,140 +21,128 @@ import { crashlytics } from '@app/utils/firebase';
 import { tryAgainLaterNotification } from '@app/utils/notifications';
 
 const MessageScreen: React.FC = () => {
+	const { navigate } = useNavigation();
+	const { user, theme } = useContext(AppContext);
 
-  const { navigate } = useNavigation();
-  const { user, theme } = useContext(AppContext);
+	const [queryChats, { called, data, loading, error }] = useLazyQuery(QUERY_CHATS, {
+		variables: { userId: user.id },
+		fetchPolicy: 'network-only',
+		pollInterval: PollIntervals.messages,
+	});
 
-  const [queryChats, { called, data, loading, error }] = useLazyQuery(QUERY_CHATS, {
-    variables: { userId: user.id },
-    fetchPolicy: 'network-only',
-    pollInterval: PollIntervals.messages
-  });
+	const [createTemporaryChat] = useMutation(MUTATION_CREATE_TEMPORARY_CHAT);
 
-  const [createTemporaryChat] = useMutation(MUTATION_CREATE_TEMPORARY_CHAT);
+	const [chatSearch, setChatSearch] = useState('');
+	const newMessageBottomSheetRef = useRef();
 
-  const [chatSearch, setChatSearch] = useState('');
-  const newMessageBottomSheetRef = useRef();
+	useEffect(() => {
+		queryChats();
+	}, []);
 
-  useEffect(() => {
-    queryChats();
-  }, []);
+	const renderItem = ({ item }) => {
+		const { id: chatId, participants, messages } = item;
+		const [participant] = filterChatParticipants(user.id, participants);
+		const [lastMessage] = messages;
 
-  const renderItem = ({ item }) => {
+		const { id, avatar, handle, lastSeen } = participant;
+		const {
+			id: messageId,
+			author: { id: authorId },
+			seen,
+			body: messageBody,
+			createdAt: time,
+		} = lastMessage;
 
-    const { id: chatId, participants, messages } = item;
-    const [participant] = filterChatParticipants(user.id, participants);
-    const [lastMessage] = messages;
+		const isOnline = isUserOnline(lastSeen);
 
-    const { id, avatar, handle, lastSeen } = participant;
-    const {
-      id: messageId,
-      author: { id: authorId },
-      seen,
-      body: messageBody,
-      createdAt: time
-    } = lastMessage;
+		return (
+			<MessageCard
+				chatId={chatId}
+				participantId={id}
+				avatar={avatar}
+				handle={handle}
+				authorId={authorId}
+				messageId={messageId}
+				messageBody={messageBody}
+				seen={seen}
+				time={time}
+				isOnline={isOnline}
+			/>
+		);
+	};
 
-    const isOnline = isUserOnline(lastSeen);
+	let content = <MessageScreenPlaceholder />;
 
-    return (
-      <MessageCard
-        chatId={chatId}
-        participantId={id}
-        avatar={avatar}
-        handle={handle}
-        authorId={authorId}
-        messageId={messageId}
-        messageBody={messageBody}
-        seen={seen}
-        time={time}
-        isOnline={isOnline}
-      />
-    );
-  };
+	if (called && !loading && !error) {
+		const { chats } = data;
 
-  let content = <MessageScreenPlaceholder />;
+		const filteredChats = searchQueryFilter(chats, user.id, chatSearch);
+		const sortedFilteredChats = sortMessageAscendingTime(filteredChats);
 
-  if (called && !loading && !error) {
-    const { chats } = data;
+		content = (
+			<FlatGrid
+				itemDimension={responsiveWidth(85)}
+				showsVerticalScrollIndicator={false}
+				items={sortedFilteredChats}
+				ListEmptyComponent={() => <SvgBanner Svg={EmptyMessages} spacing={16} placeholder="No messages" />}
+				style={styles().messagesList}
+				spacing={20}
+				renderItem={renderItem}
+			/>
+		);
+	}
 
-    const filteredChats = searchQueryFilter(chats, user.id, chatSearch);
-    const sortedFilteredChats = sortMessageAscendingTime(filteredChats);
+	const onConnectionSelect = async (targetId: string, avatar: string, handle: string) => {
+		try {
+			const {
+				data: { chatExists },
+			} = await client.query({
+				query: QUERY_CHAT_EXISTS,
+				variables: { userId: user.id, targetId },
+			});
 
-    content = (
-      <FlatGrid
-        itemDimension={responsiveWidth(85)}
-        showsVerticalScrollIndicator={false}
-        items={sortedFilteredChats}
-        ListEmptyComponent={() => <SvgBanner Svg={EmptyMessages} spacing={16} placeholder='No messages' />}
-        style={styles().messagesList}
-        spacing={20}
-        renderItem={renderItem}
-      />
-    );
-  }
+			// @ts-ignore
+			newMessageBottomSheetRef.current.close();
+			if (chatExists) {
+				navigate(Routes.ConversationScreen, { chatId: chatExists.id, avatar, handle, targetId });
+			} else {
+				const { data } = await createTemporaryChat();
+				navigate(Routes.ConversationScreen, { chatId: data.createTemporaryChat.id, avatar, handle, targetId });
+			}
+		} catch ({ message }) {
+			tryAgainLaterNotification();
+			crashlytics.recordCustomError(Errors.INITIALIZE_CHAT, message);
+		}
+	};
 
-  const onConnectionSelect = async (targetId: string, avatar: string, handle: string) => {
-    try {
-      const { data: { chatExists } } = await client.query({
-        query: QUERY_CHAT_EXISTS,
-        variables: { userId: user.id, targetId }
-      });
+	const IconRight = () => (
+		<IconButton
+			// @ts-ignore
+			onPress={() => newMessageBottomSheetRef.current.open()}
+			Icon={() => <Entypo name="add-to-list" size={IconSizes.x6} color={theme.text01} />}
+		/>
+	);
 
-      // @ts-ignore
-      newMessageBottomSheetRef.current.close();
-      if (chatExists) {
-        navigate(Routes.ConversationScreen, { chatId: chatExists.id, avatar, handle, targetId });
-      } else {
-        const { data } = await createTemporaryChat();
-        navigate(Routes.ConversationScreen, { chatId: data.createTemporaryChat.id, avatar, handle, targetId });
-      }
-    } catch ({ message }) {
-      tryAgainLaterNotification();
-      crashlytics.recordCustomError(Errors.INITIALIZE_CHAT, message);
-    }
-  };
-
-  const IconRight = () => <IconButton
-    // @ts-ignore
-    onPress={() => newMessageBottomSheetRef.current.open()}
-    Icon={() =>
-      <Entypo
-        name='add-to-list'
-        size={IconSizes.x6}
-        color={theme.text01}
-      />}
-  />
-
-  return (
-    <View style={styles(theme).container}>
-      <Header
-        title='Messages'
-        IconRight={IconRight}
-      />
-      <SearchBar
-        value={chatSearch}
-        onChangeText={setChatSearch}
-        placeholder='Search for chats...'
-      />
-      {content}
-      <NewMessageBottomSheet
-        ref={newMessageBottomSheetRef}
-        onConnectionSelect={onConnectionSelect}
-      />
-    </View>
-  );
+	return (
+		<View style={styles(theme).container}>
+			<Header title="Messages" IconRight={IconRight} />
+			<SearchBar value={chatSearch} onChangeText={setChatSearch} placeholder="Search for chats..." />
+			{content}
+			<NewMessageBottomSheet ref={newMessageBottomSheetRef} onConnectionSelect={onConnectionSelect} />
+		</View>
+	);
 };
 
-const styles = (theme = {} as ThemeColors) => StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: theme.base
-  },
-  messagesList: {
-    flex: 1,
-    paddingHorizontal: 4
-  }
-});
+const styles = (theme = {} as ThemeColors) =>
+	StyleSheet.create({
+		container: {
+			flex: 1,
+			backgroundColor: theme.base,
+		},
+		messagesList: {
+			flex: 1,
+			paddingHorizontal: 4,
+		},
+	});
 
 export default MessageScreen;

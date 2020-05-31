@@ -10,36 +10,31 @@ import Config from '@app/config';
 const httpLink = new HttpLink({ uri: Config.url.https });
 
 const wsLink = new WebSocketLink({
-  uri: Config.url.wss,
-  options: { reconnect: true }
+	uri: Config.url.wss,
+	options: { reconnect: true },
 });
 
 const link = split(
-  ({ query }) => {
-    const definition = getMainDefinition(query);
-    return (
-      definition.kind === 'OperationDefinition' &&
-      definition.operation === 'subscription'
-    );
-  },
-  wsLink,
-  httpLink,
+	({ query }) => {
+		const definition = getMainDefinition(query);
+		return definition.kind === 'OperationDefinition' && definition.operation === 'subscription';
+	},
+	wsLink,
+	httpLink,
 );
 
 const client = new ApolloClient({
-  link: ApolloLink.from([
-    onError(({ graphQLErrors, networkError }) => {
-      if (graphQLErrors)
-        graphQLErrors.forEach(({ message, locations, path }) =>
-          console.log(
-            `[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`,
-          ),
-        );
-      if (networkError) console.log(`[Network error]: ${networkError}`);
-    }),
-    link
-  ]),
-  cache: new InMemoryCache()
+	link: ApolloLink.from([
+		onError(({ graphQLErrors, networkError }) => {
+			if (graphQLErrors)
+				graphQLErrors.forEach(({ message, locations, path }) =>
+					console.log(`[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`),
+				);
+			if (networkError) console.log(`[Network error]: ${networkError}`);
+		}),
+		link,
+	]),
+	cache: new InMemoryCache(),
 });
 
 export default client;
