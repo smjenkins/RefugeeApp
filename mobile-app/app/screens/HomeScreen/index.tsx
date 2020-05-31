@@ -16,133 +16,117 @@ import { crashlytics, initializeFCM, messaging } from '@app/utils/firebase';
 import PostCard from './components/PostCard';
 
 const HomeScreen: React.FC = () => {
+	const { user, theme, unreadMessages } = useContext(AppContext);
+	const { navigate } = useNavigation();
+	const {
+		data: userFeedQueryData,
+		loading: userFeedQueryLoading,
+		error: userFeedQueryError,
+		refetch: userFeedRefetch,
+	} = useQuery(QUERY_USER_FEED, { variables: { userId: user.id }, fetchPolicy: 'network-only' });
+	const [updateFcmToken] = useMutation(MUTATION_UPDATE_FCM_TOKEN);
 
-  const { user, theme, unreadMessages } = useContext(AppContext);
-  const { navigate } = useNavigation();
-  const {
-    data: userFeedQueryData,
-    loading: userFeedQueryLoading,
-    error: userFeedQueryError,
-    refetch: userFeedRefetch
-  } = useQuery(QUERY_USER_FEED, { variables: { userId: user.id }, fetchPolicy: 'network-only' });
-  const [updateFcmToken] = useMutation(MUTATION_UPDATE_FCM_TOKEN);
+	const initialize = async () => {
+		const fcmToken = await initializeFCM();
+		if (fcmToken) {
+			updateFcmToken({
+				variables: {
+					userId: user.id,
+					fcmToken,
+				},
+			});
+		}
+	};
 
-  const initialize = async () => {
-    const fcmToken = await initializeFCM();
-    if (fcmToken) {
-      updateFcmToken({
-        variables: {
-          userId: user.id,
-          fcmToken
-        }
-      });
-    }
-  };
+	useEffect(() => {
+		const onTokenRefreshListener = messaging.onTokenRefresh((fcmToken) => {
+			try {
+				if (fcmToken)
+					updateFcmToken({
+						variables: {
+							userId: user.id,
+							fcmToken,
+						},
+					});
+			} catch ({ message }) {
+				crashlytics.recordCustomError(Errors.UPDATE_FCM_TOKEN, message);
+			}
+		});
 
-  useEffect(() => {
-    const onTokenRefreshListener = messaging.onTokenRefresh(fcmToken => {
-      try {
-        if (fcmToken) updateFcmToken({
-          variables: {
-            userId: user.id,
-            fcmToken
-          }
-        });
-      } catch ({ message }) {
-        crashlytics.recordCustomError(Errors.UPDATE_FCM_TOKEN, message)
-      }
-    });
+		return () => {
+			onTokenRefreshListener();
+		};
+	}, []);
 
-    return () => {
-      onTokenRefreshListener();
-    };
-  }, []);
+	useEffect(() => {
+		initialize();
+	}, []);
 
-  useEffect(() => {
-    initialize();
-  }, [])
+	const navigateToMessages = () => navigate(Routes.MessageScreen);
 
-  const navigateToMessages = () => navigate(Routes.MessageScreen);
+	const refreshControl = () => {
+		const onRefresh = () => {
+			try {
+				userFeedRefetch();
+			} catch {}
+		};
 
-  const refreshControl = () => {
-    const onRefresh = () => {
-      try {
-        userFeedRefetch();
-      } catch { }
-    };
+		return <RefreshControl tintColor={theme.text02} refreshing={userFeedQueryLoading} onRefresh={onRefresh} />;
+	};
 
-    return (
-      <RefreshControl
-        tintColor={theme.text02}
-        refreshing={userFeedQueryLoading}
-        onRefresh={onRefresh}
-      />
-    );
-  };
+	const renderItem = ({ item }) => {
+		const { id, uri, caption, likes, createdAt, author } = item;
 
-  const renderItem = ({ item }) => {
+		return <PostCard id={id} author={author} time={createdAt} uri={uri} likes={likes} caption={caption} />;
+	};
 
-    const { id, uri, caption, likes, createdAt, author } = item;
+	let content = <PostCardPlaceholder />;
 
-    return <PostCard
-      id={id}
-      author={author}
-      time={createdAt}
-      uri={uri}
-      likes={likes}
-      caption={caption}
-    />;
-  };
+	if (!userFeedQueryLoading && !userFeedQueryError) {
+		const { userFeed } = userFeedQueryData;
+		content = (
+			<FlatGrid
+				refreshControl={refreshControl()}
+				itemDimension={responsiveWidth(85)}
+				showsVerticalScrollIndicator={false}
+				items={userFeed}
+				ListEmptyComponent={() => <SvgBanner Svg={EmptyFeed} spacing={20} placeholder={`Let's follow someone`} />}
+				style={styles().postList}
+				spacing={20}
+				renderItem={renderItem}
+			/>
+		);
+	}
 
-  let content = <PostCardPlaceholder />;
+	const IconRight = () => {
+		const hasBadge = unreadMessages !== 0;
+		return (
+			<IconButton
+				hasBadge={hasBadge}
+				badgeCount={unreadMessages}
+				onPress={navigateToMessages}
+				Icon={() => <FontAwesome name="send" size={IconSizes.x5} color={theme.text01} />}
+			/>
+		);
+	};
 
-  if (!userFeedQueryLoading && !userFeedQueryError) {
-    const { userFeed } = userFeedQueryData;
-    content = (
-      <FlatGrid
-        refreshControl={refreshControl()}
-        itemDimension={responsiveWidth(85)}
-        showsVerticalScrollIndicator={false}
-        items={userFeed}
-        ListEmptyComponent={() => <SvgBanner Svg={EmptyFeed} spacing={20} placeholder={`Let's follow someone`} />}
-        style={styles().postList}
-        spacing={20}
-        renderItem={renderItem}
-      />
-    );
-  }
-
-  const IconRight = () => {
-    const hasBadge = unreadMessages !== 0;
-    return <IconButton
-      hasBadge={hasBadge}
-      badgeCount={unreadMessages}
-      onPress={navigateToMessages}
-      Icon={() =>
-        <FontAwesome
-          name='send'
-          size={IconSizes.x5}
-          color={theme.text01}
-        />}
-    />;
-  };
-
-  return (
-    <View style={styles(theme).container}>
-      <HomeHeader IconRight={IconRight} />
-      {content}
-    </View>
-  );
+	return (
+		<View style={styles(theme).container}>
+			<HomeHeader IconRight={IconRight} />
+			{content}
+		</View>
+	);
 };
 
-const styles = (theme = {} as ThemeColors) => StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: theme.base
-  },
-  postList: {
-    flex: 1
-  }
-});
+const styles = (theme = {} as ThemeColors) =>
+	StyleSheet.create({
+		container: {
+			flex: 1,
+			backgroundColor: theme.base,
+		},
+		postList: {
+			flex: 1,
+		},
+	});
 
 export default HomeScreen;

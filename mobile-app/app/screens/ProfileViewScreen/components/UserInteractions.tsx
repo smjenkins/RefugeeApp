@@ -16,127 +16,121 @@ import { tryAgainLaterNotification } from '@app/utils/notifications';
 const { FontWeights, FontSizes } = Typography;
 
 interface UserInteractionsProps {
-  targetId: string,
-  avatar: string,
-  handle: string
-};
+	targetId: string;
+	avatar: string;
+	handle: string;
+}
 
 const UserInteractions: React.FC<UserInteractionsProps> = ({ targetId, avatar, handle }) => {
+	const { navigate } = useNavigation();
+	const { user, theme } = useContext(AppContext);
+	const { data: doesFollowData, loading: doesFollowLoading, error: doesFollowError } = useQuery(QUERY_DOES_FOLLOW, {
+		variables: { userId: user.id, targetId },
+		pollInterval: PollIntervals.interaction,
+	});
 
-  const { navigate } = useNavigation();
-  const { user, theme } = useContext(AppContext);
-  const {
-    data: doesFollowData,
-    loading: doesFollowLoading,
-    error: doesFollowError
-  } = useQuery(QUERY_DOES_FOLLOW, {
-    variables: { userId: user.id, targetId },
-    pollInterval: PollIntervals.interaction
-  });
+	const [updateFollowing, { loading: updateFollowingLoading }] = useMutation(MUTATION_UPDATE_FOLLOWING);
+	const [createTemporaryChat] = useMutation(MUTATION_CREATE_TEMPORARY_CHAT);
 
-  const [updateFollowing, { loading: updateFollowingLoading }] = useMutation(MUTATION_UPDATE_FOLLOWING);
-  const [createTemporaryChat] = useMutation(MUTATION_CREATE_TEMPORARY_CHAT);
+	let content = <LoadingIndicator size={IconSizes.x0} color={theme.white} />;
 
-  let content = <LoadingIndicator size={IconSizes.x0} color={theme.white} />;
+	if (!doesFollowLoading && !updateFollowingLoading && !doesFollowError) {
+		const { doesFollow } = doesFollowData;
+		content = <Text style={styles(theme).followInteractionText}>{`${doesFollow ? 'FOLLOWING' : 'FOLLOW'}`}</Text>;
+	}
 
-  if (!doesFollowLoading && !updateFollowingLoading && !doesFollowError) {
-    const { doesFollow } = doesFollowData;
-    content = (
-      <Text style={styles(theme).followInteractionText}>
-        {`${doesFollow ? 'FOLLOWING' : 'FOLLOW'}`}
-      </Text>
-    );
-  }
+	const followInteraction = () => {
+		if (doesFollowLoading) return;
 
-  const followInteraction = () => {
-    if (doesFollowLoading) return;
+		const { doesFollow } = doesFollowData;
+		const updateFollowingArgs = { userId: user.id, targetId };
+		if (doesFollow) {
+			updateFollowing({
+				variables: {
+					...updateFollowingArgs,
+					action: FollowInteraction.UNFOLLOW,
+				},
+			});
+		} else {
+			updateFollowing({
+				variables: {
+					...updateFollowingArgs,
+					action: FollowInteraction.FOLLOW,
+				},
+			});
+		}
+	};
 
-    const { doesFollow } = doesFollowData;
-    const updateFollowingArgs = { userId: user.id, targetId };
-    if (doesFollow) {
-      updateFollowing({
-        variables: {
-          ...updateFollowingArgs,
-          action: FollowInteraction.UNFOLLOW
-        }
-      });
-    } else {
-      updateFollowing({
-        variables: {
-          ...updateFollowingArgs,
-          action: FollowInteraction.FOLLOW
-        }
-      });
-    }
-  };
+	const messageInteraction = async () => {
+		try {
+			const {
+				data: { chatExists },
+			} = await client.query({
+				query: QUERY_CHAT_EXISTS,
+				variables: { userId: user.id, targetId },
+			});
 
-  const messageInteraction = async () => {
-    try {
-      const { data: { chatExists } } = await client.query({
-        query: QUERY_CHAT_EXISTS,
-        variables: { userId: user.id, targetId }
-      });
+			if (chatExists) {
+				navigate(Routes.ConversationScreen, { chatId: chatExists.id, avatar, handle, targetId });
+			} else {
+				const { data } = await createTemporaryChat();
+				navigate(Routes.ConversationScreen, { chatId: data.createTemporaryChat.id, avatar, handle, targetId });
+			}
+		} catch ({ message }) {
+			tryAgainLaterNotification();
+			crashlytics.recordCustomError(Errors.INITIALIZE_CHAT, message);
+		}
+	};
 
-      if (chatExists) {
-        navigate(Routes.ConversationScreen, { chatId: chatExists.id, avatar, handle, targetId });
-      } else {
-        const { data } = await createTemporaryChat();
-        navigate(Routes.ConversationScreen, { chatId: data.createTemporaryChat.id, avatar, handle, targetId });
-      }
-    } catch ({ message }) {
-      tryAgainLaterNotification();
-      crashlytics.recordCustomError(Errors.INITIALIZE_CHAT, message);
-    }
-  };
-
-  return (
-    <View style={styles().container}>
-      <TouchableOpacity activeOpacity={0.90} onPress={followInteraction} style={styles(theme).followInteraction}>
-        {content}
-      </TouchableOpacity>
-      <TouchableOpacity activeOpacity={0.90} onPress={messageInteraction} style={styles(theme).messageInteraction}>
-        <Text style={styles(theme).messageInteractionText}>MESSAGE</Text>
-      </TouchableOpacity>
-    </View>
-  );
+	return (
+		<View style={styles().container}>
+			<TouchableOpacity activeOpacity={0.9} onPress={followInteraction} style={styles(theme).followInteraction}>
+				{content}
+			</TouchableOpacity>
+			<TouchableOpacity activeOpacity={0.9} onPress={messageInteraction} style={styles(theme).messageInteraction}>
+				<Text style={styles(theme).messageInteractionText}>MESSAGE</Text>
+			</TouchableOpacity>
+		</View>
+	);
 };
 
-const styles = (theme = {} as ThemeColors) => StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginTop: 20
-  },
-  followInteraction: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginRight: 5,
-    paddingVertical: 7,
-    borderRadius: 40,
-    backgroundColor: theme.accent
-  },
-  messageInteraction: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginLeft: 5,
-    paddingVertical: 7,
-    borderRadius: 40,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: theme.accent
-  },
-  followInteractionText: {
-    ...FontWeights.Light,
-    ...FontSizes.Caption,
-    color: theme.white
-  },
-  messageInteractionText: {
-    ...FontWeights.Light,
-    ...FontSizes.Caption,
-    color: theme.accent
-  }
-});
+const styles = (theme = {} as ThemeColors) =>
+	StyleSheet.create({
+		container: {
+			flexDirection: 'row',
+			alignItems: 'center',
+			justifyContent: 'space-between',
+			marginTop: 20,
+		},
+		followInteraction: {
+			flex: 1,
+			alignItems: 'center',
+			justifyContent: 'center',
+			marginRight: 5,
+			paddingVertical: 7,
+			borderRadius: 40,
+			backgroundColor: theme.accent,
+		},
+		messageInteraction: {
+			flex: 1,
+			alignItems: 'center',
+			justifyContent: 'center',
+			marginLeft: 5,
+			paddingVertical: 7,
+			borderRadius: 40,
+			borderWidth: StyleSheet.hairlineWidth,
+			borderColor: theme.accent,
+		},
+		followInteractionText: {
+			...FontWeights.Light,
+			...FontSizes.Caption,
+			color: theme.white,
+		},
+		messageInteractionText: {
+			...FontWeights.Light,
+			...FontSizes.Caption,
+			color: theme.accent,
+		},
+	});
 
 export default UserInteractions;

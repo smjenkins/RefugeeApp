@@ -8,33 +8,37 @@ import { Dimensions } from '@app/types/constants';
 import NativeImage from '../misc/NativeImage';
 
 interface PostThumbnailProps {
-  id: string,
-  uri: string,
-  dimensions: Dimensions
-};
+	id: string;
+	uri: string;
+	dimensions: Dimensions;
+}
 
 const PostThumbnail: React.FC<PostThumbnailProps> = ({ id, uri, dimensions }) => {
-  const { theme } = useContext(AppContext);
-  const { navigate } = useNavigation();
+	const { theme } = useContext(AppContext);
+	const { navigate } = useNavigation();
 
-  const navigateToPost = () => navigate(Routes.PostViewScreen, { postId: id });
+	const navigateToPost = () => navigate(Routes.PostViewScreen, { postId: id });
 
-  return (
-    <TouchableOpacity onPress={navigateToPost} activeOpacity={0.95} style={[styles(theme).container, { ...dimensions }]}>
-      <NativeImage uri={uri} style={styles().thumbnailImage} />
-    </TouchableOpacity>
-  );
+	return (
+		<TouchableOpacity
+			onPress={navigateToPost}
+			activeOpacity={0.95}
+			style={[styles(theme).container, { ...dimensions }]}>
+			<NativeImage uri={uri} style={styles().thumbnailImage} />
+		</TouchableOpacity>
+	);
 };
 
-const styles = (theme = {} as ThemeColors) => StyleSheet.create({
-  container: {
-    backgroundColor: theme.placeholder,
-    overflow: 'hidden',
-    borderRadius: 5
-  },
-  thumbnailImage: {
-    flex: 1
-  }
-});
+const styles = (theme = {} as ThemeColors) =>
+	StyleSheet.create({
+		container: {
+			backgroundColor: theme.placeholder,
+			overflow: 'hidden',
+			borderRadius: 5,
+		},
+		thumbnailImage: {
+			flex: 1,
+		},
+	});
 
 export default PostThumbnail;

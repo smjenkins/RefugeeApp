@@ -1,1 +1,10 @@
-[{"name":"main","index":0,"scopes":["EXTERNAL_LIBRARIES"],"types":["DEX_ARCHIVE"],"format":"DIRECTORY","present":true}]
+[
+	{
+		"name": "main",
+		"index": 0,
+		"scopes": ["EXTERNAL_LIBRARIES"],
+		"types": ["DEX_ARCHIVE"],
+		"format": "DIRECTORY",
+		"present": true
+	}
+]

@@ -21,72 +21,77 @@ import { computeUnreadMessages } from './app/utils/shared';
 GoogleSignin.configure();
 
 const SafeAreaApp = () => {
-  const { user, theme, themeType, toggleTheme, updateUnreadMessages } = useContext(AppContext);
-  const { barStyle, backgroundColor } = DynamicStatusBar[themeType];
-  const [updateLastSeen] = useMutation(MUTATION_LAST_SEEN);
+	const { user, theme, themeType, toggleTheme, updateUnreadMessages } = useContext(AppContext);
+	const { barStyle, backgroundColor } = DynamicStatusBar[themeType];
+	const [updateLastSeen] = useMutation(MUTATION_LAST_SEEN);
 
-  const initializeTheme = async () => {
-    try {
-      const themeType = await loadThemeType();
-      toggleTheme(themeType);
-    } catch ({ message }) {
-      crashlytics.recordCustomError(Errors.LOAD_THEME, message);
-    }
-  };
+	const initializeTheme = async () => {
+		try {
+			const themeType = await loadThemeType();
+			toggleTheme(themeType);
+		} catch ({ message }) {
+			crashlytics.recordCustomError(Errors.LOAD_THEME, message);
+		}
+	};
 
-  useEffect(() => {
-    initializeTheme();
-  }, []);
+	useEffect(() => {
+		initializeTheme();
+	}, []);
 
-  useEffect(() => {
-    setInterval(async () => {
-      if (user.id) {
-        try {
-          const { data: { updateLastSeen: { chats } } } = await updateLastSeen({ variables: { userId: user.id } });
-          const unreadMessages = computeUnreadMessages(chats, user.id);
+	useEffect(() => {
+		setInterval(async () => {
+			if (user.id) {
+				try {
+					const {
+						data: {
+							updateLastSeen: { chats },
+						},
+					} = await updateLastSeen({ variables: { userId: user.id } });
+					const unreadMessages = computeUnreadMessages(chats, user.id);
 
-          updateUnreadMessages(unreadMessages);
-        } catch ({ message }) {
-          crashlytics.recordCustomError(Errors.UPDATE_LAST_SEEN, message);
-        }
-      }
-    }, PollIntervals.lastSeen);
-  }, [user.id]);
+					updateUnreadMessages(unreadMessages);
+				} catch ({ message }) {
+					crashlytics.recordCustomError(Errors.UPDATE_LAST_SEEN, message);
+				}
+			}
+		}, PollIntervals.lastSeen);
+	}, [user.id]);
 
-  return (
-    <SafeAreaView style={styles(theme).container}>
-      <StatusBar animated barStyle={barStyle} backgroundColor={backgroundColor} />
-      <AppNavigator />
-      <FlashMessage titleStyle={styles().flashMessageTitle} floating position='bottom' />
-    </SafeAreaView>
-  );
+	return (
+		<SafeAreaView style={styles(theme).container}>
+			<StatusBar animated barStyle={barStyle} backgroundColor={backgroundColor} />
+			<AppNavigator />
+			<FlashMessage titleStyle={styles().flashMessageTitle} floating position="bottom" />
+		</SafeAreaView>
+	);
 };
 
 const App = () => {
-  return (
-    <ApolloProvider client={client}>
-      <AppContextProvider>
-        <SafeAreaApp />
-      </AppContextProvider>
-    </ApolloProvider>
-  );
+	return (
+		<ApolloProvider client={client}>
+			<AppContextProvider>
+				<SafeAreaApp />
+			</AppContextProvider>
+		</ApolloProvider>
+	);
 };
 
-const styles = (theme = {} as ThemeColors) => StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: theme.base
-  },
-  flashMessageTitle: {
-    ...Typography.FontWeights.Light,
-    ...Typography.FontSizes.Body,
-    color: ThemeStatic.white
-  }
-});
+const styles = (theme = {} as ThemeColors) =>
+	StyleSheet.create({
+		container: {
+			flex: 1,
+			backgroundColor: theme.base,
+		},
+		flashMessageTitle: {
+			...Typography.FontWeights.Light,
+			...Typography.FontSizes.Body,
+			color: ThemeStatic.white,
+		},
+	});
 
 const CodepushApp = codePush({
-  deploymentKey: Config.codepush.production,
-  checkFrequency: codePush.CheckFrequency.ON_APP_START
+	deploymentKey: Config.codepush.production,
+	checkFrequency: codePush.CheckFrequency.ON_APP_START,
 })(App);
 
 export default CodepushApp;
