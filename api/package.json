@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "apollo-server-express": "^2.12.0",
+    "apollo-server-express": "^2.14.2",
     "apollo-server-integration-testing": "^2.3.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
