@@ -173,3 +173,12 @@ export const MUTATION_UNBLOCK_USER = gql`
 		unblockUser(from: $from, to: $to)
 	}
 `;
+
+export const MUTATION_LOGIN = gql`
+	mutation LoginUser($phone: PhoneNumber!) {
+		loginUser(phone: $phone) {
+			success
+			message
+		}
+	}
+`;

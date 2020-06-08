@@ -16,6 +16,8 @@ import {
 } from '@app/types/constants';
 
 export const Routes: RoutesType = {
+	IntroScreen: 'IntroScreen',
+	EnterPhoneNumberScreen: 'EnterPhoneNumberScreen',
 	App: 'App',
 	Auth: 'Auth',
 	HomeScreen: 'HomeScreen,',
@@ -28,7 +30,6 @@ export const Routes: RoutesType = {
 	MessageScreen: 'MessageScreen',
 	ConversationScreen: 'ConversationScreen',
 	PostViewScreen: 'PostViewScreen',
-	IntroScreen: 'IntroScreen',
 };
 
 export const NotificationType: NotificationTextType = {

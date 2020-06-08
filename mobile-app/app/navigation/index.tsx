@@ -40,6 +40,9 @@ const AuthStack = createStackNavigator(
 		IntroScreen: {
 			screen: StackRoutes.IntroScreen,
 		},
+		EnterPhoneNumberScreen: {
+			screen: StackRoutes.EnterPhoneNumberScreen,
+		},
 	},
 	{ headerMode: 'none' },
 );
