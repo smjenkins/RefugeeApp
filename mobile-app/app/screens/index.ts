@@ -8,9 +8,11 @@ import MessageScreen from './MessageScreen';
 import ConversationScreen from './ConversationScreen';
 import PostViewScreen from './PostViewScreen';
 import IntroScreen from './IntroScreen/index';
+import EnterPhoneNumberScreen from './EnterPhoneNumberScreen/index';
 
 export {
 	IntroScreen,
+	EnterPhoneNumberScreen,
 	HomeScreen,
 	ExploreScreen,
 	UploadScreen,

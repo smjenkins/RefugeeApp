@@ -1,12 +1,16 @@
 import React, { useContext, useEffect } from 'react';
 import { Text, View } from 'react-native';
+import { useNavigation } from 'react-navigation-hooks';
 import SplashScreen from 'react-native-splash-screen';
 
 import { AppContext } from '@app/context';
+import { Routes } from '@app/constants';
 import { ThemeStatic } from '@app/theme';
 import { Button } from '@app/layout';
 import IntroBanner from '@app/assets/svg/intro-banner.svg';
 import { styles } from './styles';
+
+const { EnterPhoneNumberScreen } = Routes;
 
 const SPLASH_SCREEN_TIMEOUT = 2000;
 
@@ -20,6 +24,7 @@ const initialize = () => {
 
 const IntroScreen: React.FC = () => {
 	const { theme } = useContext(AppContext);
+	const { navigate } = useNavigation();
 	const { container, content, titleText, subtitleText, banner, loginButton, loginButtonText } = styles(theme);
 
 	useEffect(() => {
@@ -36,12 +41,12 @@ const IntroScreen: React.FC = () => {
 				</Text>
 			</View>
 			<View style={banner}>
-				<IntroBanner />
+				<IntroBanner height={250} />
 			</View>
 			<View style={content}>
 				<Button
 					label="Get started"
-					onPress={() => null}
+					onPress={() => navigate('EnterPhoneNumberScreen')}
 					containerStyle={loginButton}
 					labelStyle={loginButtonText}
 					indicatorColor={ThemeStatic.accent}

@@ -1,4 +1,6 @@
 import {
+	IntroScreen,
+	EnterPhoneNumberScreen,
 	HomeScreen,
 	ExploreScreen,
 	UploadScreen,
@@ -8,7 +10,6 @@ import {
 	MessageScreen,
 	ConversationScreen,
 	PostViewScreen,
-	IntroScreen,
 } from '@app/screens';
 
 export const TabBarRoutes = {
@@ -20,9 +21,10 @@ export const TabBarRoutes = {
 };
 
 export const StackRoutes = {
+	IntroScreen,
+	EnterPhoneNumberScreen,
 	MessageScreen,
 	ConversationScreen,
 	ProfileViewScreen,
 	PostViewScreen,
-	IntroScreen,
 };

@@ -1,5 +1,14 @@
 import { Platform } from 'react-native';
 
+const PROXIMITY_URLS = {
+	HTTPS: 'https://proximity-development.herokuapp.com/',
+	WSS: 'wss://proximity-development.herokuapp.com/',
+};
+
+const REFUGEE_APP_URLS = {
+	HTTPS: 'https://refugeez-api.herokuapp.com/graphql',
+};
+
 const {
 	author: { name, email, url },
 	repository: { url: repository },
@@ -23,8 +32,8 @@ const Config = {
 	version,
 	codepush,
 	url: {
-		https: 'https://proximity-development.herokuapp.com/',
-		wss: 'wss://proximity-development.herokuapp.com/',
+		https: REFUGEE_APP_URLS.HTTPS,
+		wss: PROXIMITY_URLS.WSS,
 	},
 };
 
