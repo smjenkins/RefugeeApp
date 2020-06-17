@@ -127,7 +127,7 @@ const EditProfileBottomSheet: React.FC<EditProfileBottomSheetProps> = React.forw
 						updateUser: { id, avatar: updatedAvatar, handle: updatedHandle },
 					},
 				} = await updateUser({ variables: updatedProfileData });
-				updateUserContext({ id, avatar: updatedAvatar, handle: updatedHandle });
+				updateUserContext({ id, avatar: updatedAvatar, handle: updatedHandle, mobileNumber: user.mobileNumber || '' });
 				setIsUploading(false);
 				//@ts-ignore
 				ref.current.close();

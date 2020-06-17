@@ -17,8 +17,8 @@ import EnterPhoneNumberBanner from '@app/assets/svg/enter-phone-number-banner.sv
 import { countries } from './constants';
 
 const EnterPhoneNumberScreen: React.FC = () => {
-	const { theme } = useContext(AppContext);
-	const [loading, setLoading] = useState(false);
+	const { theme, user, updateUser } = useContext(AppContext);
+	const [loading, setLoading]: [boolean, any] = useState(false);
 	const [phoneNumber, setPhoneNumber] = useState({ countryCode: '', mobileNumber: '' });
 	const [login] = useMutation(MUTATION_LOGIN);
 	const { navigate } = useNavigation();
@@ -31,10 +31,11 @@ const EnterPhoneNumberScreen: React.FC = () => {
 		setLoading(true);
 
 		try {
-			await login({
-				variables: { phone: `${phoneNumber.countryCode}${phoneNumber.mobileNumber.replace(/^0+/, '')}` },
-			});
-			navigate(Routes.App);
+			const mobileNumber = `${phoneNumber.countryCode}${phoneNumber.mobileNumber.replace(/^0+/, '')}`;
+
+			await login({ variables: { phone: mobileNumber } });
+			updateUser({ ...user, mobileNumber });
+			navigate('EnterCodeScreen');
 		} catch (error) {
 			// to handled more gracefully in the next PR
 			Alert.alert(JSON.stringify(error.message));
@@ -46,15 +47,18 @@ const EnterPhoneNumberScreen: React.FC = () => {
 	return (
 		<ScrollView>
 			{loading && (
-				<View style={{ flex: 1 }}>
+				<View style={styles(theme).modalWrapper}>
 					<Modal
 						isVisible={loading}
 						animationIn="fadeIn"
 						animationOut="fadeOut"
-						backdropOpacity={0.9}
-						backdropColor={Theme.light.colors.text01}
+						backdropOpacity={0.95}
+						backdropColor="white"
 						hideModalContentWhileAnimating={true}>
-						<SkypeIndicator color={Theme.light.colors.accent} />
+						<View>
+							<SkypeIndicator color={Theme.light.colors.accent} style={{ marginBottom: 50 }} />
+							<Text style={styles(theme).modalText}>Verifying your mobile number...</Text>
+						</View>
 					</Modal>
 				</View>
 			)}
@@ -122,7 +126,7 @@ const EnterPhoneNumberScreen: React.FC = () => {
 						containerStyle={styles(theme).loginButton}
 						labelStyle={styles(theme).loginButtonText}
 						indicatorColor={ThemeStatic.accent}
-						loading={false}
+						loading={loading}
 						disabled
 					/>
 				</View>

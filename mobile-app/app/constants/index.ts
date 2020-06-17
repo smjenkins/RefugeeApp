@@ -18,6 +18,7 @@ import {
 export const Routes: RoutesType = {
 	IntroScreen: 'IntroScreen',
 	EnterPhoneNumberScreen: 'EnterPhoneNumberScreen',
+	EnterCodeScreen: 'EnterCodeScreen',
 	App: 'App',
 	Auth: 'Auth',
 	HomeScreen: 'HomeScreen,',

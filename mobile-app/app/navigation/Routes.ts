@@ -1,6 +1,7 @@
 import {
 	IntroScreen,
 	EnterPhoneNumberScreen,
+	EnterCodeScreen,
 	HomeScreen,
 	ExploreScreen,
 	UploadScreen,
@@ -23,6 +24,7 @@ export const TabBarRoutes = {
 export const StackRoutes = {
 	IntroScreen,
 	EnterPhoneNumberScreen,
+	EnterCodeScreen,
 	MessageScreen,
 	ConversationScreen,
 	ProfileViewScreen,
