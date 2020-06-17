@@ -47,9 +47,9 @@ const EnterPhoneNumberScreen: React.FC = () => {
 	return (
 		<ScrollView>
 			{loading && (
-				<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+				<View style={styles(theme).modalWrapper}>
 					<Modal
-						isVisible={true}
+						isVisible={loading}
 						animationIn="fadeIn"
 						animationOut="fadeOut"
 						backdropOpacity={0.95}
@@ -57,15 +57,7 @@ const EnterPhoneNumberScreen: React.FC = () => {
 						hideModalContentWhileAnimating={true}>
 						<View>
 							<SkypeIndicator color={Theme.light.colors.accent} style={{ marginBottom: 50 }} />
-							<Text
-								style={{
-									...styles(theme).subtitleText,
-									color: Theme.light.colors.accent,
-									textAlign: 'center',
-									fontSize: 18,
-								}}>
-								Verifying your mobile number...
-							</Text>
+							<Text style={styles(theme).modalText}>Verifying your mobile number...</Text>
 						</View>
 					</Modal>
 				</View>

@@ -41,9 +41,9 @@ const EnterCodeScreen: React.FC = () => {
 	return (
 		<ScrollView>
 			{loading && (
-				<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+				<View style={styles(theme).modalWrapper}>
 					<Modal
-						isVisible={true}
+						isVisible={loading}
 						animationIn="fadeIn"
 						animationOut="fadeOut"
 						backdropOpacity={0.95}
@@ -51,15 +51,7 @@ const EnterCodeScreen: React.FC = () => {
 						hideModalContentWhileAnimating={true}>
 						<View>
 							<SkypeIndicator color={Theme.light.colors.accent} style={{ marginBottom: 50 }} />
-							<Text
-								style={{
-									...styles(theme).subtitleText,
-									color: Theme.light.colors.accent,
-									textAlign: 'center',
-									fontSize: 18,
-								}}>
-								Checking your verification code...
-							</Text>
+							<Text style={styles(theme).modalText}>Checking your verification code...</Text>
 						</View>
 					</Modal>
 				</View>

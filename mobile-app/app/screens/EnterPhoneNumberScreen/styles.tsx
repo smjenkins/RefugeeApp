@@ -153,4 +153,17 @@ export const styles = (theme = {} as ThemeColors) =>
 			...FontSizes.Label,
 			color: theme.text01,
 		},
+		modalWrapper: {
+			flex: 1,
+			alignItems: 'center',
+			justifyContent: 'center',
+		},
+		modalText: {
+			...FontWeights.Light,
+			...FontSizes.Label,
+			marginTop: 10,
+			color: theme.accent,
+			textAlign: 'center',
+			fontSize: 18,
+		},
 	});
