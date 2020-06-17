@@ -7,6 +7,7 @@ type UserType = {
 	id: string;
 	avatar: string;
 	handle: string;
+	mobileNumber: string;
 };
 
 type AppContextType = {
@@ -17,6 +18,8 @@ type AppContextType = {
 	toggleTheme: (type: string) => void;
 	unreadMessages: number;
 	updateUnreadMessages: (count: number) => void;
+	token: string;
+	updateToken: (type: string) => void;
 };
 
 export const AppContext = createContext({} as AppContextType);
@@ -26,10 +29,12 @@ export const AppContextProvider = (props) => {
 		id: '',
 		avatar: '',
 		handle: '',
+		mobileNumber: '',
 	});
 	const [theme, setTheme] = useState(Theme.light.colors);
 	const [themeType, setThemeType] = useState(Theme.light.type);
 	const [unreadMessages, setUnreadMessages] = useState(0);
+	const [token, setToken] = useState('');
 
 	const updateUser = (user: UserType) => {
 		setUser(user);
@@ -45,6 +50,10 @@ export const AppContextProvider = (props) => {
 		setUnreadMessages(count);
 	};
 
+	const updateToken = (token: string) => {
+		setToken(token);
+	};
+
 	const value = {
 		user,
 		updateUser,
@@ -53,6 +62,8 @@ export const AppContextProvider = (props) => {
 		toggleTheme,
 		unreadMessages,
 		updateUnreadMessages,
+		token,
+		updateToken,
 	};
 
 	return <AppContext.Provider value={value}>{props.children}</AppContext.Provider>;

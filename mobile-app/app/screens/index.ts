@@ -9,10 +9,12 @@ import ConversationScreen from './ConversationScreen';
 import PostViewScreen from './PostViewScreen';
 import IntroScreen from './IntroScreen/index';
 import EnterPhoneNumberScreen from './EnterPhoneNumberScreen/index';
+import EnterCodeScreen from './EnterCodeScreen/index';
 
 export {
 	IntroScreen,
 	EnterPhoneNumberScreen,
+	EnterCodeScreen,
 	HomeScreen,
 	ExploreScreen,
 	UploadScreen,

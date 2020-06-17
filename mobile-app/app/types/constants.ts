@@ -13,6 +13,7 @@ export type RoutesType = {
 	PostViewScreen: string;
 	IntroScreen: string;
 	EnterPhoneNumberScreen: string;
+	EnterCodeScreen: string;
 };
 
 export type NotificationTextType = {

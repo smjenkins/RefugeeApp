@@ -182,3 +182,11 @@ export const MUTATION_LOGIN = gql`
 		}
 	}
 `;
+
+export const MUTATION_VERIFY = gql`
+	mutation verifyUser($phone: PhoneNumber!, $code: String!) {
+		verifyUser(phone: $phone, code: $code) {
+			token
+		}
+	}
+`;
