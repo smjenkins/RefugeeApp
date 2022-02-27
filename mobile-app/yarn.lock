@@ -1093,6 +1093,11 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/google-signin/-/google-signin-3.0.3.tgz#3755c5dd082cce8db6b7dd1a6cc511fb247f6918"
   integrity sha512-/7HTW8QjswXgGhD0C3h/0ZtuNnQApsTZE8wZE7iWoERHEIXQV3GSqVTY8gfB23T7FOxAOpxF5n+v9u5tbYCloA==
 
+"@react-native-community/picker@^1.6.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@react-native-community/picker/-/picker-1.8.1.tgz#94f14f0aad98fa7592967b941be97deec95c3805"
+  integrity sha512-Sj9DzX1CSnmYiuEQ5fQhExoo4XjSKoZkqLPAAybycq6RHtCuWppf+eJXRMCOJki25BlKSSt+qVqg0fIe//ujNQ==
+
 "@react-navigation/core@^3.5.1":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-3.5.1.tgz#7a2339fca3496979305fb3a8ab88c2ca8d8c214d"
@@ -7057,9 +7062,9 @@ query-string@^6.4.2:
     strict-uri-encode "^2.0.0"
 
 querystringify@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
-  integrity sha512-w7fLxIRCRT7U8Qu53jQnJyPkYZIaR4n5151KMfcJlO/A9397Wxb1amJvROTK6TOnp7PfoAmg/qXiNHI+08jRfA==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
+  integrity sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==
 
 range-parser@~1.2.1:
   version "1.2.1"
@@ -7273,6 +7278,11 @@ react-native-safe-area-view@^0.14.1, react-native-safe-area-view@^0.14.6:
   integrity sha512-tOxHGQUN83MTmQB4ghoQkibqOdGiX4JQEmeyEv96MKWO/x8T2PJv84ECUos9hD3blPRQwVwSpAid1PPPhrVEaw==
   dependencies:
     debounce "^1.2.0"
+
+react-native-screens@^2.8.0:
+  version "2.18.1"
+  resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.18.1.tgz#47b9991c6f762d00d0ed3233e5283d523e859885"
+  integrity sha512-r5WZLpmx2hHjC1RgMdPq5YpSU9tEhBpUaZ5M1SUtNIONyiLqQVxabhRCINdebIk4depJiIl7yw2Q85zJyeX6fw==
 
 react-native-splash-screen@^3.2.0:
   version "3.2.0"
@@ -8924,9 +8934,9 @@ url-parse-lax@^3.0.0:
     prepend-http "^2.0.0"
 
 url-parse@^1.4.7:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
-  integrity sha512-d3uaVyzDB9tQoSXFvuSUNFibTd9zxd2bkVrDRvF5TmvWWQwqE4lgYJ5m+x1DbecWkw+LK4RNl2CU1hHuOKPVlg==
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.10.tgz#9d3c2f736c1d75dd3bd2be507dcc111f1e2ea9c1"
+  integrity sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
